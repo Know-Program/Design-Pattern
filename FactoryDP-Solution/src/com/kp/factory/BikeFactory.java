@@ -15,7 +15,7 @@ public class BikeFactory {
       // variables
       Bike bike = null;
 
-      // create CarTyres object
+      // create BikeTyres object
       BikeTyres tyres = new BikeTyres();
       if(type.equalsIgnoreCase("model1")) {
          bike = new Model1Bike(tyres);
