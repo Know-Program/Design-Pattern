@@ -19,14 +19,15 @@ public abstract class HireFresher {
 		System.out.println("HireFresher.conductHRTest()");
 		return true;
 	}
-	
+
 	// template method - defining the skeleton of the algorithm
-	public boolean recruiteFresher() {
-		if(conductAptitudeTest()) {
-			if(conductGDTest()) {
-				if(conductTechnicalTest()) {
-					if(conductCodingTest()) {
-						if(conductHRTest()) {
+	// declare it as final so that child class can’t modify the order
+	public final boolean recruiteFresher() {
+		if (conductAptitudeTest()) {
+			if (conductGDTest()) {
+				if (conductTechnicalTest()) {
+					if (conductCodingTest()) {
+						if (conductHRTest()) {
 							return true;
 						}
 					}
